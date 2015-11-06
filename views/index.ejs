@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='/stylesheets/bootstrap-3.3.2-dist/css/bootstrap.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+     <script type="text/javaScript" src='/javascript/jquery.js'></script>
+     <script type="text/javaScript" src="/javascript/angular.min.js"></script>  
+  </head>
+  <body>
+  
+  
+  <div id="header">
+   <div class="container"> 
+   <div class="row">
+  <div class="col-sm-6">
+  <h1>
+	<img  width="165" height="40" alt="LinkedIn" src="https://static.licdn.com/scds/common/u/img/logos/logo_132x32_2.png">
+	</h1>
+</div>
+<div class="col-sm-6">
+ <label for="email"><h4>Email address</h4></label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+ <label for="pwd"><h4>Password</h4></label>
+<form class="form-inline" method='post' action='/onLogin'>
+<div class="form-group">
+	<input type="email" class="form-control" id="email" name="email" required>
+	 </div>
+	 
+<div class="form-group">
+	<input type="password" class="form-control" id="password" name="password" required>
+</div>
+	<button type="submit" class="btn-submit">Sign In</button>
+	<p id="LoginerrorMessage"></p>	
+</form>
+
+</div>
+</div>
+</div>
+</div>
+  
+    <div class="container"> 
+    <br/>
+    <h1>
+&nbsp; &nbsp; &nbsp;Join the world's largest professional network.
+</h1>
+   <br/><br/><br/>
+    <div class="row">
+  <div class="col-sm-6">
+   <img src="r1.png" class="img-circle" alt="pic1" width="150" height="150"/>
+    <img src="r12.png" class="img-circle" alt="pic1" width="150" height="150"/>
+     <img src="r13.png" class="img-circle" alt="pic1" width="150" height="150"/>
+      <img src="r14.png" class="img-circle" alt="pic1" width="150" height="150"/>
+       <img src="r22.png" class="img-circle" alt="pic1" width="150" height="150"/>
+        <img src="r23.png" class="img-circle" alt="pic1" width="150" height="150"/>
+  </div>
+  <div class="col-sm-6"> 
+  
+  <div class="header">
+<h2>Get started – it’s free.</h2>
+</div>
+<div class="content">
+<p>
+Registration takes less than 2 minutes.
+</p>
+ </div>
+  
+
+ <form id="guest-home-reg-form" class="feature" method='post' action='/signUp'>
+ <fieldset>
+<div class="fieldgroup">
+<input type="text"  id="firstName" name="firstName" tabindex="5" maxlength="20" size="55"  placeholder="First name" required>
+</div><br/>
+<div class="fieldgroup">
+<input type="text"  id="lastName" name="lastName" tabindex="6" maxlength="40" size="55"  placeholder="Last name" required>
+</div><br/>
+
+ <div class="fieldgroup">
+<input type="email" id="email" name="email" tabindex="7" maxlength="128" size="55"  name="email" placeholder="Email address" required>
+</div><br/>
+<div class="fieldgroup">
+<input  type="password" id="password"  name="password" tabindex="8" placeholder="Password" required>
+</div>
+	<div class="form-bottom-row">
+	&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+	<button type="submit" class="btn-action" tabindex="9">Join now</button>
+	</div>
+	<p id="SignUperrorMessage"></p>
+	</fieldset>
+</form>
+</div>
+  
+   <br/>
+   
+    </div>
+    </div>
+    
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel='stylesheet' href='/stylesheets/bootstrap-3.3.2-dist/css/bootstrap.css' />
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+<script type="text/javaScript" src='/javascript/jquery.js'></script>
+<script type="text/javaScript" src='/javascript/client.js'></script>
+<script type="text/javaScript" src='/javascript/angular.min.js'></script>
+
+</head>
+<body style="background-color:#eee">
+
+	<div id="header">
+	<div class="container"> 
+  	<h1>
+	<img  width="165" height="40" alt="LinkedIn" src="https://static.licdn.com/scds/common/u/img/logos/logo_132x32_2.png">
+	</h1>
+	</div>
+	</div>
+	<div class="container">
+	<div class="createform">
+	<div class="page-header">
+	<h4>
+People you are connected to-
+</h4>
+</div>
+
+<% friendList.forEach(function(friendList){ %>
+<p>
+<%= friendList.friendId%><br>
+</p>
+ <% }) %>
+
+</body>
+</html>
